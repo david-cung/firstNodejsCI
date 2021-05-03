@@ -1,9 +1,20 @@
-pipline {
+pipeline {
     agent any
+
     stages {
-        stage('Clone') {
+        stage('Build') {
             steps {
-                git 'https://github.com/david-cung/firstNodejsCI.git'
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
             }
         }
     }
