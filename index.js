@@ -2,5 +2,5 @@ const express = require('express');
 const app = express();
 
 app.listen(3000, () => {
-    console.log('server is saaaaaatartinggg221222222gggdddddd');
+    console.log('server is startinggg221222222gggdddddd');
 })
