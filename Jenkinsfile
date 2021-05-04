@@ -7,5 +7,10 @@ pipeline {
                 git 'https://github.com/david-cung/firstNodejsCI.git'
             }
         }
+        stage('Build') {
+            steps {
+                sh 'npm install'
+            }
+        }
     }
 }
